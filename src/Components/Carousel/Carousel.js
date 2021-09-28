@@ -25,13 +25,7 @@ const Carousel = () => {
               alt="First slide"
             />
           </div>
-          <div className="carousel-item">
-            <img
-              className="d-block w-100"
-              src="../../img/fish-2.jpg"
-              alt="Second slide"
-            />
-          </div>
+        
           <div className="carousel-item">
             <img
               className="d-block w-100"
