@@ -1,0 +1,37 @@
+.card-title {
+  position: relative !important ;
+  z-index: 1 !important;
+  display: inline-block !important;
+}
+.card-title::after {
+  content: "" !important;
+  position: absolute !important;
+  top: -0.25rem !important;
+  left: -3rem !important;
+  bottom: -0.25rem !important;
+  width: calc(100% + 6rem) !important;
+  background: rgb(216, 48, 76) !important;
+  z-index: -1 !important;
+  transform: scaleX(0) !important;
+  transform-origin: left !important;
+  transition: transform 0.75s ease-in-out !important;
+}
+.card:hover .card-title::after {
+  transform: scaleX(1) !important;
+}
+.card:hover .card-title {
+  color: white;
+}
+.card {
+  overflow-x: hidden;
+}
+.img-container {
+  overflow: hidden;
+}
+.card:hover .card-img-top {
+  transform: scale(1.5);
+  transition: transform 1.25s ease-in-out !important;
+}
+.card:hover {
+  box-shadow: 10px 10px 10px gray;
+}
